@@ -1,0 +1,94 @@
+/* src/components/AuthForms.css */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  border: 1px solid #ecf0f1;
+  text-align: center;
+}
+
+.auth-container h2 {
+  color: #2c3e50; /* Dark Slate Blue */
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-container input[type="email"],
+.auth-container input[type="password"],
+.auth-container textarea { /* Por si hay textareas en el futuro */
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bdc3c7; /* Light grey */
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box; /* Incluir padding y border en el width */
+}
+
+.auth-container input:focus,
+.auth-container textarea:focus {
+  border-color: #3498db; /* Blue accent on focus */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.auth-container button[type="submit"] {
+  background-color: #3498db; /* Blue primary button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.auth-container button[type="submit"]:disabled {
+  background-color: #95a5a6; /* Grey when disabled */
+  cursor: not-allowed;
+}
+
+.auth-container p {
+  color: #c0392b; /* Softer Red for errors */
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.auth-toggle-button {
+  background: none;
+  border: none;
+  color: #3498db;
+  text-decoration: underline;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: color 0.2s ease;
+}
+
+.auth-toggle-button:hover {
+  color: #2980b9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .auth-container {
+    margin: 20px 10px;
+    padding: 20px;
+  }
+  .auth-container h2 {
+    font-size: 1.8em;
+  }
+}

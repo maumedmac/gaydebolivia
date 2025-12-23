@@ -1,0 +1,193 @@
+/* src/components/PlaceDetail.css */
+.place-detail {
+  color: #bdc3c7; /* Light grey text */
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #34495e; /* Dark component background */
+  border-radius: 8px;
+  border: 1px solid #4a627a;
+}
+
+.place-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #4a627a;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+  gap: 15px;
+}
+
+.place-header h1 {
+  font-size: 2.2em;
+  margin: 0;
+  color: #ecf0f1; /* Light heading */
+}
+
+.place-rating {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #ecf0f1;
+  background-color: #2c3e50; /* Darker background */
+  padding: 8px 12px;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+
+.place-main-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.place-tags {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.place-tags .tag {
+  color: #ecf0f1;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.city-tag {
+  background-color: #9b59b6; /* Amethyst */
+}
+
+.type-tag {
+  background-color: #e67e22; /* Carrot */
+}
+
+.audience-tag {
+  background-color: #16a085; /* Green Sea */
+}
+
+.place-main-info p {
+  font-size: 1.1em;
+  margin: 5px 0;
+}
+
+.place-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #2c3e50; /* Darker section background */
+  border-radius: 5px;
+  border-left: 4px solid #5dade2; /* Brighter Blue accent */
+}
+
+.place-section h2 {
+  font-size: 1.6em;
+  border-bottom: 1px solid #4a627a;
+  padding-bottom: 10px;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+
+.place-section ul {
+  padding-left: 20px;
+  list-style: none;
+}
+
+.place-section ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+.place-section ul li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: #5dade2;
+  font-weight: bold;
+}
+
+.place-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.place-section table td {
+  padding: 10px 5px;
+  border-bottom: 1px solid #4a627a;
+}
+
+.pros-cons-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pros-cons-container .place-section {
+  margin-bottom: 0;
+}
+
+.pros h2 { color: #2ecc71; }
+.pros { border-left-color: #2ecc71; }
+.pros ul li::before { content: '✅'; left: -5px; }
+
+.cons h2 { color: #e74c3c; }
+.cons { border-left-color: #e74c3c; }
+.cons ul li::before { content: '⚠️'; left: -5px; }
+
+.activity-levels div {
+  font-size: 1.1em;
+  margin-bottom: 5px;
+}
+
+.comment-section p {
+  font-style: italic;
+  color: #bdc3c7;
+}
+
+.final-summary {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #4a627a;
+}
+.summary-pro { color: #2ecc71; font-weight: bold; }
+.summary-con { color: #e74c3c; font-weight: bold; }
+
+.place-footer {
+  text-align: center;
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #34495e;
+  color: #e74c3c;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .place-detail {
+    margin: 10px;
+    padding: 15px;
+  }
+  .place-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .place-header h1 {
+    font-size: 1.8em;
+  }
+  .place-rating {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  .place-section h2 {
+    font-size: 1.4em;
+  }
+  .pros-cons-container {
+    grid-template-columns: 1fr; /* Stack pros and cons */
+  }
+}

@@ -1,0 +1,64 @@
+/* src/components/AppBar.css */
+.app-bar {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.app-bar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.app-bar-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.app-bar-button {
+  background-color: #333;
+  color: white;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.app-bar-button:hover {
+  background-color: #444;
+}
+
+.app-bar-button:active {
+  transform: scale(0.95);
+}
+
+.app-bar-back-button {
+  background-color: #555; /* A slightly different color for distinction */
+  color: white;
+  border: 1px solid #777;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-right: 1rem; /* Space between back button and title */
+}
+
+.app-bar-back-button:hover {
+  background-color: #666;
+}
+
+.app-bar-back-button:active {
+  transform: scale(0.95);
+}

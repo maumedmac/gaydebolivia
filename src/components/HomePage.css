@@ -1,0 +1,134 @@
+/* src/components/HomePage.css */
+.home-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.home-page h1 {
+  text-align: center;
+  font-size: 3.5em; /* Increased from 2.8em */
+  color: #ecf0f1; /* Light heading color */
+  margin-bottom: 10px; /* Increased margin */
+}
+
+.home-subtitle {
+  text-align: center;
+  font-size: 1.5em; /* Increased from 1.2em */
+  color: #95a5a6; /* Lighter grey */
+  margin-bottom: 50px; /* Increased margin */
+}
+
+.review-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.review-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.review-card {
+  background: #34495e; /* Dark component background */
+  border-radius: 8px;
+  box-shadow: none;
+  overflow: hidden;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border: 1px solid #4a627a;
+}
+
+.review-card:hover {
+  transform: translateY(-4px);
+  background-color: #4c5a6d;
+}
+
+.card-image {
+  width: 100%;
+  height: 220px; /* Slightly increased height */
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.6em; /* Increased from 1.4em */
+  color: #ecf0f1;
+}
+
+.card-tags {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.tag {
+  background-color: #4a627a;
+  color: #ecf0f1;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.tag.distance-tag {
+  background-color: #8e44ad; /* A distinct purple color */
+  color: white;
+}
+
+.card-rating {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #2c3e50; /* Darker background */
+  color: #ecf0f1;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.card-summary-pro { /* Renamed for clarity and general use */
+    font-size: 1em; /* Increased from 0.9em */
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #2ecc71; /* Brighter Green */
+}
+
+.card-rating-stars { /* New class for the star rating */
+  font-size: 1.2em;
+  margin-top: 10px;
+  color: #f1c40f; /* Golden color for stars */
+}
+.card-rating-stars .star-rating {
+    color: #f1c40f; /* Ensure stars are golden */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 15px;
+  }
+  .home-page h1 {
+    font-size: 2.5em; /* Adjusted for mobile */
+  }
+  .home-subtitle {
+    font-size: 1.3em; /* Adjusted for mobile */
+  }
+  .card-content h3 {
+    font-size: 1.5em; /* Adjusted for mobile */
+  }
+  .review-list {
+    grid-template-columns: 1fr; /* Stack cards vertically */
+    gap: 20px;
+  }
+}

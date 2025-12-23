@@ -1,0 +1,88 @@
+/* src/App.css */
+#root {
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  padding-top: 80px; /* Adjust this value based on the actual height of your AppBar */
+}
+
+.app-header-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2c3e50; /* Dark Slate Blue */
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.app-header-auth h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: white;
+}
+
+.app-header-auth .app-title-link {
+    text-decoration: none;
+    color: white;
+}
+.app-header-auth .app-title-link:hover {
+    color: #ecf0f1;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 1em;
+}
+
+.logout-button {
+  background-color: #e74c3c; /* Red */
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.logout-button:hover {
+  background-color: #c0392b; /* Darker red */
+}
+
+.auth-flow-container {
+    flex-grow: 1; /* Permite que ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive adjustments for header */
+@media (max-width: 768px) {
+  .app-header-auth {
+    flex-direction: column;
+    padding: 10px 15px;
+  }
+  .app-header-auth h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  .user-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
