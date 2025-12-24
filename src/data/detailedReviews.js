@@ -283,4 +283,5 @@ export const detailedReviews = [
       con: 'Área de cruising helada e incómoda, higiene deficiente, baños sin papel, ambiente deteriorado y público poco atractivo.'
     }
   }
+
 ];
